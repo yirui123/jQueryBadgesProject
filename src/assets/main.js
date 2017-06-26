@@ -3,8 +3,8 @@ $(function() {
   $.ajax({
     url: 'https://www.codeschool.com/users/yrui.json',
     dataType: 'jsonp',
-    success: function(data) {
-      populateWithCourses(data.courses.completed)
+    success: function(response) {
+      populateWithCourses(response.courses.completed)
     }
   });
 
